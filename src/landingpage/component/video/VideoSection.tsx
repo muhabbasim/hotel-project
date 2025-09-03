@@ -1,4 +1,3 @@
-import FsLightbox from "fslightbox-react";
 import React, { useState } from "react";
 
 type VideoData = {
@@ -95,7 +94,7 @@ const VideoSection: React.FC = () => {
           </div>
         ))}
       </div>
-      <FsLightbox
+      {/* <FsLightbox
         toggler={lightboxController.toggler}
         sources={[
           "https://www.youtube.com/watch?v=OWsvEOeZ0DE",
@@ -104,7 +103,7 @@ const VideoSection: React.FC = () => {
           "https://www.youtube.com/watch?v=nyDnQQSUfL0",
         ]}
         slide={lightboxController.slide}
-      />
+      /> */}
     </section>
   );
 };

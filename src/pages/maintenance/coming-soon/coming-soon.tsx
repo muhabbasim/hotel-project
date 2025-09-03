@@ -14,14 +14,14 @@ import IconButton from 'components/@extended/IconButton';
 import { Facebook, Google, Notification } from 'iconsax-react';
 import coming1 from '/src/assets/images/maintenance/img-soon-1-1.png';
 import coming2 from '/src/assets/images/maintenance/img-soon-1-2.png';
-import AuthBackground from '../../../src/assets/images/auth/AuthBackground';
+// import AuthBackground from '../../../src/assets/images/auth/AuthBackground';
 
 // ==============================|| COMING SOON ||============================== //
 
 export default function ComingSoon() {
   return (
     <>
-      <AuthBackground />
+      {/* <AuthBackground /> */}
       <Container fixed>
         <Grid container spacing={4} alignItems="center" justifyContent="center" sx={{ minHeight: '100vh' }}>
           <Grid item md={6}>

@@ -43,7 +43,7 @@ function DraggableMarkers({ ...other }: MapBoxProps) {
 
   return (
     <>
-      <Map initialViewState={{ latitude: 21.2335611, longitude: 72.8636084, zoom: 6 }} {...other}>
+      {/* <Map initialViewState={{ latitude: 21.2335611, longitude: 72.8636084, zoom: 6 }} {...other}>
         <MapControl />
         <MapMarker
           longitude={marker.longitude}
@@ -54,7 +54,7 @@ function DraggableMarkers({ ...other }: MapBoxProps) {
           onDrag={onMarkerDrag}
           onDragEnd={onMarkerDragEnd}
         />
-      </Map>
+      </Map> */}
 
       <ControlPanel events={events} />
     </>

@@ -64,32 +64,33 @@ function HighlightByFilter({ ...other }: MapBoxProps) {
   const filter = useMemo(() => ['in', 'COUNTY', selectedCounty], [selectedCounty]);
 
   return (
-    <Map
-      initialViewState={{
-        latitude: 38.88,
-        longitude: -98,
-        zoom: 3
-      }}
-      minZoom={2}
-      onMouseMove={onHover}
-      interactiveLayerIds={['counties']}
-      {...other}
-    >
-      <MapControl />
-      <Source type="vector" url="mapbox://mapbox.82pkq93d">
-        <Layer beforeId="waterway-label" {...countiesLayer} />
-        {/* @ts-ignore */}
-        <Layer beforeId="waterway-label" {...highlightLayer} filter={filter} />
-      </Source>
+    // <Map
+    //   initialViewState={{
+    //     latitude: 38.88,
+    //     longitude: -98,
+    //     zoom: 3
+    //   }}
+    //   minZoom={2}
+    //   onMouseMove={onHover}
+    //   interactiveLayerIds={['counties']}
+    //   {...other}
+    // >
+    //   <MapControl />
+    //   <Source type="vector" url="mapbox://mapbox.82pkq93d">
+    //     <Layer beforeId="waterway-label" {...countiesLayer} />
+    //     {/* @ts-ignore */}
+    //     <Layer beforeId="waterway-label" {...highlightLayer} filter={filter} />
+    //   </Source>
 
-      {selectedCounty && hoverInfo && (
-        <MapPopup longitude={hoverInfo.longitude} latitude={hoverInfo.latitude} closeButton={false}>
-          <Typography variant="body2" color="secondary.lighter">
-            {selectedCounty}
-          </Typography>
-        </MapPopup>
-      )}
-    </Map>
+    //   {selectedCounty && hoverInfo && (
+    //     <MapPopup longitude={hoverInfo.longitude} latitude={hoverInfo.latitude} closeButton={false}>
+    //       <Typography variant="body2" color="secondary.lighter">
+    //         {selectedCounty}
+    //       </Typography>
+    //     </MapPopup>
+    //   )}
+    // </Map>
+    <></>
   );
 }
 

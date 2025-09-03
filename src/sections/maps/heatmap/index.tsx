@@ -39,20 +39,7 @@ function Heatmap({ ...other }: MapBoxProps) {
 
   return (
     <>
-      <Map
-        initialViewState={{
-          latitude: 40,
-          longitude: -100,
-          zoom: 3
-        }}
-        {...other}
-      >
-        {data && (
-          <Source type="geojson" data={data}>
-            <Layer {...heatmapLayer} />
-          </Source>
-        )}
-      </Map>
+  
       <ControlPanel
         startTime={timeRange[0]}
         endTime={timeRange[1]}

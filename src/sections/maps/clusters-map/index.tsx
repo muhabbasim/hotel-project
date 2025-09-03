@@ -38,30 +38,7 @@ function MapClusters({ ...other }: MapBoxProps) {
   };
 
   return (
-    <Map
-      initialViewState={{
-        latitude: 40.67,
-        longitude: -103.59,
-        zoom: 3
-      }}
-      interactiveLayerIds={[clusterLayer.id || '']}
-      onClick={onClick}
-      ref={mapRef}
-      {...other}
-    >
-      <Source
-        id="earthquakes"
-        type="geojson"
-        data="https://docs.mapbox.com/mapbox-gl-js/assets/earthquakes.geojson"
-        cluster
-        clusterMaxZoom={14}
-        clusterRadius={50}
-      >
-        <Layer {...clusterLayer} />
-        <Layer {...clusterCountLayer} />
-        <Layer {...unclusteredPointLayer} />
-      </Source>
-    </Map>
+<></>
   );
 }
 

@@ -50,7 +50,7 @@ function SideBySide({ ...other }: MapBoxProps) {
 
   return (
     <>
-      <Map
+      {/* <Map
         id="left-map"
         {...viewState}
         padding={leftMapPadding}
@@ -63,8 +63,8 @@ function SideBySide({ ...other }: MapBoxProps) {
         style={leftMapStyle}
         mapStyle="mapbox://styles/mapbox/light-v10"
         {...other}
-      />
-      <Map
+      /> */}
+      {/* <Map
         id="right-map"
         {...viewState}
         padding={rightMapPadding}
@@ -77,7 +77,7 @@ function SideBySide({ ...other }: MapBoxProps) {
         style={rightMapStyle}
         mapStyle="mapbox://styles/mapbox/dark-v10"
         {...other}
-      />
+      /> */}
       <ControlPanel mode={mode} onModeChange={handleChangeMode} />
     </>
   );

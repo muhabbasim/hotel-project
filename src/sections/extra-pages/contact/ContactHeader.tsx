@@ -5,14 +5,14 @@ import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 
 // assets
-import AuthBackground from '../../../src/assets/images/auth/AuthBackground';
+// import AuthBackground from '../../../src/assets/images/auth/AuthBackground';
 
 // ==============================|| CONTACT US - HEADER ||============================== //
 
 export default function ContactHeader() {
   return (
     <Box sx={{ position: 'relative', overflow: 'hidden', pt: 9, pb: 2 }}>
-      <AuthBackground />
+      {/* <AuthBackground /> */}
       <Container maxWidth="lg" sx={{ px: { xs: 0, sm: 2 } }}>
         <Box sx={{ width: { xs: '100%', sm: 252, md: 360, lg: 436 }, py: 6, mx: 'auto' }}>
           <Stack spacing={1}>

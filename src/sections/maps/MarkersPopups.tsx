@@ -34,52 +34,53 @@ function MarkersPopups({ data, ...other }: Props) {
   const [popupInfo, setPopupInfo] = useState<CountryProps | null>(null);
 
   return (
-    <Map
-      initialViewState={{
-        latitude: 21.2335611,
-        longitude: 72.8636084,
-        zoom: 2
-      }}
-      {...other}
-    >
-      <MapControl />
-      {data.map((city, index) => (
-        <MapMarker
-          key={`marker-${index}`}
-          latitude={city.latlng[0]}
-          longitude={city.latlng[1]}
-          onClick={(event: any) => {
-            event.originalEvent.stopPropagation();
-            setPopupInfo(city);
-          }}
-        />
-      ))}
+    // <Map
+    //   initialViewState={{
+    //     latitude: 21.2335611,
+    //     longitude: 72.8636084,
+    //     zoom: 2
+    //   }}
+    //   {...other}
+    // >
+    //   <MapControl />
+    //   {data.map((city, index) => (
+    //     <MapMarker
+    //       key={`marker-${index}`}
+    //       latitude={city.latlng[0]}
+    //       longitude={city.latlng[1]}
+    //       onClick={(event: any) => {
+    //         event.originalEvent.stopPropagation();
+    //         setPopupInfo(city);
+    //       }}
+    //     />
+    //   ))}
 
-      {popupInfo && (
-        <MapPopup latitude={popupInfo.latlng[0]} longitude={popupInfo.latlng[1]} onClose={() => setPopupInfo(null)}>
-          <Box sx={{ mb: 1, display: 'flex', alignItems: 'center' }}>
-            <Box
-              sx={{
-                height: 18,
-                minWidth: 28,
-                mr: 1,
-                borderRadius: 2,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                backgroundRepeat: 'no-repeat',
-                backgroundImage: `url(https://cdn.staticaly.com/gh/hjnilsson/country-flags/master/svg/${popupInfo.country_code.toLowerCase()}.svg)`
-              }}
-            />
-            <Typography variant="subtitle2">{popupInfo.name}</Typography>
-          </Box>
-          <Stack spacing={0.5}>
-            <Typography variant="caption">Timezones: {popupInfo.timezones}</Typography>
-            <Typography variant="caption">Lat: {popupInfo.latlng[0]}</Typography>
-            <Typography variant="caption">Long: {popupInfo.latlng[1]}</Typography>
-          </Stack>
-        </MapPopup>
-      )}
-    </Map>
+    //   {popupInfo && (
+    //     <MapPopup latitude={popupInfo.latlng[0]} longitude={popupInfo.latlng[1]} onClose={() => setPopupInfo(null)}>
+    //       <Box sx={{ mb: 1, display: 'flex', alignItems: 'center' }}>
+    //         <Box
+    //           sx={{
+    //             height: 18,
+    //             minWidth: 28,
+    //             mr: 1,
+    //             borderRadius: 2,
+    //             backgroundSize: 'cover',
+    //             backgroundPosition: 'center',
+    //             backgroundRepeat: 'no-repeat',
+    //             backgroundImage: `url(https://cdn.staticaly.com/gh/hjnilsson/country-flags/master/svg/${popupInfo.country_code.toLowerCase()}.svg)`
+    //           }}
+    //         />
+    //         <Typography variant="subtitle2">{popupInfo.name}</Typography>
+    //       </Box>
+    //       <Stack spacing={0.5}>
+    //         <Typography variant="caption">Timezones: {popupInfo.timezones}</Typography>
+    //         <Typography variant="caption">Lat: {popupInfo.latlng[0]}</Typography>
+    //         <Typography variant="caption">Long: {popupInfo.latlng[1]}</Typography>
+    //       </Stack>
+    //     </MapPopup>
+    //   )}
+    // </Map>
+    <></>
   );
 }
 

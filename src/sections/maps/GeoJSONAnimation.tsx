@@ -49,22 +49,23 @@ function GeoJSONAnimation({ ...other }: MapBoxProps) {
   });
 
   return (
-    <Map
-      initialViewState={{
-        latitude: 21.2335611,
-        longitude: 72.8636084,
-        zoom: 6
-      }}
-      mapStyle="mapbox://styles/mapbox/satellite-streets-v11"
-      {...other}
-    >
-      <MapControl />
-      {pointData && (
-        <Source type="geojson" data={pointData}>
-          <Layer {...pointLayer} />
-        </Source>
-      )}
-    </Map>
+    // <Map
+    //   initialViewState={{
+    //     latitude: 21.2335611,
+    //     longitude: 72.8636084,
+    //     zoom: 6
+    //   }}
+    //   mapStyle="mapbox://styles/mapbox/satellite-streets-v11"
+    //   {...other}
+    // >
+    //   <MapControl />
+    //   {pointData && (
+    //     <Source type="geojson" data={pointData}>
+    //       <Layer {...pointLayer} />
+    //     </Source>
+    //   )}
+    // </Map>
+    <></>
   );
 }
 

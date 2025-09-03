@@ -15,8 +15,8 @@ import ProfileRadialChart from './ProfileRadialChart';
 import { ThemeMode } from 'config';
 
 // assets
-import BackLeft from '../../../../src/assets/images/profile/UserProfileBackLeft';
-import BackRight from '../../../../src/assets/images/profile/UserProfileBackRight';
+// import BackLeft from '../../../../src/assets/images/profile/UserProfileBackLeft';
+// import BackRight from '../../../../src/assets/images/profile/UserProfileBackRight';
 
 interface Props {
   focusInput: () => void;
@@ -35,7 +35,7 @@ export default function ProfileCard({ focusInput }: Props) {
       sx={{ bgcolor: theme.palette.mode === ThemeMode.DARK ? 'primary.700' : 'primary.lighter', position: 'relative' }}
     >
       <Box sx={{ position: 'absolute', bottom: '-7px', left: 0, zIndex: 1 }}>
-        <BackLeft />
+        {/* <BackLeft /> */}
       </Box>
       <Grid container justifyContent="space-between" alignItems="center" sx={{ position: 'relative', zIndex: 5 }}>
         <Grid item>
@@ -58,7 +58,7 @@ export default function ProfileCard({ focusInput }: Props) {
         </Grid>
       </Grid>
       <Box sx={{ position: 'absolute', top: 0, right: 0, zIndex: 1 }}>
-        <BackRight />
+        {/* <BackRight /> */}
       </Box>
     </MainCard>
   );
