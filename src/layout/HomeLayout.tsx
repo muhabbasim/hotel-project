@@ -16,14 +16,14 @@ import "landingpage/styles/css/sharp-solid.min.css";
 import "landingpage/styles/css/style.css";
 import FooterSection5 from 'landingpage/compo/FooterSection5';
 import HeaderSection8 from 'landingpage/compo/HeaderSection8';
-import SidebarSection from 'landingpage/compo/SidebarSection';
+// import SidebarSection from 'landingpage/compo/SidebarSection';
 
 // ==============================|| LAYOUT - BLANK PAGES ||============================== //
 
 export default function LandingpageLayout() {
   return (
     <HomeContext>
-      <SidebarSection />
+      {/* <SidebarSection /> */}
       <ToastContainer />
 
       <HeaderSection8
