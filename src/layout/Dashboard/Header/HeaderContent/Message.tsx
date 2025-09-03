@@ -4,24 +4,14 @@ import { useState } from 'react';
 import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
-import Grid from '@mui/material/Grid';
-import Stack from '@mui/material/Stack';
-import Typography from '@mui/material/Typography';
 
-// project-imports
 import MainCard from 'components/MainCard';
 import IconButton from 'components/@extended/IconButton';
 import SimpleBar from 'components/third-party/SimpleBar';
-import MessageCard from 'components/cards/statistics/MessageCard';
 import { ThemeMode } from 'config';
 
 // assets
 import { Add, NotificationStatus } from 'iconsax-react';
-
-import message1 from '/src/assets/images/widget/message/message1.svg';
-import message2 from '/src/assets/images/widget/message/message2.svg';
-import message3 from '/src/assets/images/widget/message/message3.svg';
-import message4 from '/src/assets/images/widget/message/message4.svg';
 
 // ==============================|| HEADER CONTENT - CUSTOMIZATION ||============================== //
 
@@ -61,68 +51,7 @@ export default function Customization() {
                 }
               }}
             >
-              <Box sx={{ p: 2.5 }}>
-                <Stack direction="row" alignItems="center" justifyContent="space-between" spacing={1.5}>
-                  <Typography variant="h5">What’s new announcement?</Typography>
-                  <IconButton color="secondary" sx={{ p: 0 }} onClick={handleToggle}>
-                    <Add size={28} style={{ transform: 'rotate(45deg)' }} />
-                  </IconButton>
-                </Stack>
-                <Grid container spacing={1.5} sx={{ mt: 2 }}>
-                  <Grid item xs={12}>
-                    <Typography variant="h6">Today</Typography>
-                  </Grid>
-                  <Grid item xs={12}>
-                    <MessageCard
-                      status={{ label: 'New Feature', color: 'success' }}
-                      time="just now"
-                      title="Select Business Unit"
-                      message="You can use the Analytics Dashboard to explore how many new users download reports daily and monthly"
-                      src={message1}
-                      actions={[
-                        {
-                          label: 'Skip Intro',
-                          button: { variant: 'outlined', color: 'secondary', fullWidth: true }
-                        },
-                        {
-                          label: 'Next',
-                          button: { variant: 'contained', fullWidth: true }
-                        }
-                      ]}
-                    />
-                  </Grid>
-                  <Grid item xs={12}>
-                    <MessageCard
-                      status={{ label: 'Meeting', color: 'warning' }}
-                      time="2 min ago"
-                      title="General Meeting for update"
-                      message="You can use the Dashboard to explore how many new users download reports daily and monthly"
-                      src={message2}
-                    />
-                  </Grid>
-                  <Grid item xs={12} sx={{ my: 1.25 }}>
-                    <Typography variant="h6">Yesterday</Typography>
-                  </Grid>
-                  <Grid item xs={12}>
-                    <MessageCard
-                      status={{ label: 'Improvement', color: 'primary' }}
-                      time="2 hours ago"
-                      title="Widgets update"
-                      message="We've made some updates to the emendable widget which we think you are going to love."
-                      src={message3}
-                    />
-                  </Grid>
-                  <Grid item xs={12}>
-                    <MessageCard
-                      status={{ label: 'Improvement', color: 'primary' }}
-                      time="1 day ago"
-                      title="Coming soon dark mode"
-                      message="We've made some updates to the emendable widget which we think you are going to love."
-                      src={message4}
-                    />
-                  </Grid>
-                </Grid>
-              </Box>
+   
             </SimpleBar>
           </MainCard>
         )}

@@ -3,7 +3,6 @@ import Box from '@mui/material/Box';
 
 // project-imports
 import SimpleBar from 'components/third-party/SimpleBar';
-import Navigation from './Navigation';
 
 // ==============================|| DRWAER - CONTENT ||============================== //
 
@@ -19,7 +18,6 @@ export default function DrawerContent({ searchValue }: { searchValue?: string })
       }}
     >
       <Box sx={{ p: 3, pt: 1.5 }}>
-        <Navigation searchValue={searchValue} />
       </Box>
     </SimpleBar>
   );

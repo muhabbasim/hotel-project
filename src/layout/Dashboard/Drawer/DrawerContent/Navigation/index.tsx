@@ -10,8 +10,6 @@ import Typography from '@mui/material/Typography';
 // project-imports
 import NavItem from './NavItem';
 import NavGroup from './NavGroup';
-import menuItem from 'menu-items';
-import { MenuFromAPI } from 'menu-items/dashboard';
 
 import useConfig from 'hooks/useConfig';
 import { MenuOrientation, HORIZONTAL_MAX_ITEM } from 'config';
@@ -46,19 +44,7 @@ export default function Navigation() {
   const [selectedLevel, setSelectedLevel] = useState<number>(0);
   const [menuItems, setMenuItems] = useState<{ items: NavItemType[] }>({ items: [] });
 
-  let dashboardMenu = MenuFromAPI();
-  useLayoutEffect(() => {
-    if (menuLoading && !isFound(menuItem, 'group-dashboard-loading')) {
-      menuItem.items.splice(0, 0, dashboardMenu);
-      setMenuItems({ items: [...menuItem.items] });
-    } else if (!menuLoading && dashboardMenu?.id !== undefined && !isFound(menuItem, 'group-dashboard')) {
-      menuItem.items.splice(0, 1, dashboardMenu);
-      setMenuItems({ items: [...menuItem.items] });
-    } else {
-      setMenuItems({ items: [...menuItem.items] });
-    }
-    // eslint-disable-next-line
-  }, [menuLoading]);
+
 
   const isHorizontal = menuOrientation === MenuOrientation.HORIZONTAL && !downLG;
 
