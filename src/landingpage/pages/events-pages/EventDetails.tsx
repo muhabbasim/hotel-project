@@ -1,5 +1,5 @@
-import ErrorSection from "landingpage/component/error/ErrorSection";
-import EventDetailSection from "landingpage/component/event/EventDetailSection";
+import ErrorSection from "landingpage/compo/ErrorSection";
+import EventDetailSection from "landingpage/compo/EventDetailSection";
 import { eventList } from "landingpage/data/Data";
 
 const EventDetails = () => {
