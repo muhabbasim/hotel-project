@@ -297,12 +297,12 @@ textarea::placeholder {
 }
 
 .logo img {
-  width: 90px;
+  width: 180px;
 }
 
 @media screen and (max-width: 767px) {
   .logo img {
-    width: 90px;
+    width: 130px;
   }
 }
 
@@ -3407,7 +3407,7 @@ button.tl-1-teachers-slider-dots.active {
 
 @media screen and (max-width: 1199px) {
   .tl-header {
-    padding: 20px 0;
+    padding: 0px 0;
   }
 }
 

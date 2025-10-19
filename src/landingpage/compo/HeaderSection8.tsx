@@ -74,8 +74,9 @@ const HeaderSection8: React.FC<HeaderProps> = ({
               <div className="col-lg-12 col-6">
                 <div className="logo">
                   <Link to="/">
-                    {/* <img src="/kgb-logo2.png" alt="Logo" /> */}
-                    <h3 style={{margin: 0, color: "green"}}>TIME SHARE</h3>
+                    <img src="/src/assets/images/Takdir_proparty.webp" alt="Logo" />
+                    {/* <h3 style={{margin: 0, color: "green"}}>TIME SHARE</h3> */}
+
                   </Link>
                 </div>
               </div>
