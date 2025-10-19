@@ -22,9 +22,7 @@ const HeaderSection8: React.FC<HeaderProps> = ({
       className={`tl-header ${
         isHeaderFixed ? "sticky" : ""
       }`}
-      // style={{ backgroundColor: '#E1EEDA'}}
     >
-
       <div className="tl-8-top-header">
         <div className="container">
           <div className="row justify-content-center">
@@ -106,7 +104,6 @@ const HeaderSection8: React.FC<HeaderProps> = ({
                 <>
                   <Language/>
                   <Link to="/login" className={btnStyle}>
-                    {/* <i className="fa-regular fa-user"></i>  */}
                     <Translatable text="Login" />
                   </Link>
                 </>
