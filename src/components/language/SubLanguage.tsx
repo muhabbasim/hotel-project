@@ -2,18 +2,13 @@ import { useRef, useState } from 'react';
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Box from '@mui/material/Box';
-import ClickAwayListener from '@mui/material/ClickAwayListener';
 import Grid from '@mui/material/Grid';
-import Paper from '@mui/material/Paper';
-import Popper from '@mui/material/Popper';
+
 import List from '@mui/material/List';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import Typography from '@mui/material/Typography';
-import IconButton from 'components/@extended/IconButton';
-import { LanguageSquare } from 'iconsax-react';
-import Transitions from 'components/@extended/Transitions';
-import MainCard from 'components/MainCard';
+
 import { I18n } from 'types/config';
 import useConfig from 'hooks/useConfig';
 import { ThemeMode } from 'config';
@@ -51,42 +46,42 @@ export default function Language() {
 
   return (
     <Box sx={{ flexShrink: 0, ml: 0.5 }}>
-  <List
-                  component="nav"
-                  sx={{
-                    p: 1,
-                    width: '100%',
-                    minWidth: 200,
-                    maxWidth: 290,
-                    color: theme.palette.grey[800],
-                    [theme.breakpoints.down('md')]: { maxWidth: 250 }
-                  }}
-                >
-                  <ListItemButton selected={i18n === 'en'} onClick={() => handleListItemClick('en')}>
-                    <ListItemText
-                      primary={
-                        <Grid container>
-                          <Typography color="gray.100">English</Typography>
-                          <Typography variant="caption" color="text.secondary" sx={{ ml: '8px' }}>
-                            (UK)
-                          </Typography>
-                        </Grid>
-                      }
-                    />
-                  </ListItemButton>
-                  <ListItemButton selected={i18n === 'ar'} onClick={() => handleListItemClick('ar')}>
-                    <ListItemText
-                      primary={
-                        <Grid container>
-                          <Typography color="gray.100">عربي</Typography>
-                          <Typography variant="caption" color="text.secondary" sx={{ ml: '8px' }}>
-                            (AR)
-                          </Typography>
-                        </Grid>
-                      }
-                    />
-                  </ListItemButton>
-                </List>
-  </Box>
+      <List
+        component="nav"
+        sx={{
+          p: 1,
+          width: '100%',
+          minWidth: 200,
+          maxWidth: 290,
+          color: theme.palette.grey[800],
+          [theme.breakpoints.down('md')]: { maxWidth: 250 }
+        }}
+      >
+        <ListItemButton selected={i18n === 'en'} onClick={() => handleListItemClick('en')}>
+          <ListItemText
+            primary={
+              <Grid container>
+                <Typography color="gray.100">English</Typography>
+                <Typography variant="caption" color="text.secondary" sx={{ ml: '8px' }}>
+                  (UK)
+                </Typography>
+              </Grid>
+            }
+          />
+        </ListItemButton>
+        <ListItemButton selected={i18n === 'ar'} onClick={() => handleListItemClick('ar')}>
+          <ListItemText
+            primary={
+              <Grid container>
+                <Typography color="gray.100">عربي</Typography>
+                <Typography variant="caption" color="text.secondary" sx={{ ml: '8px' }}>
+                  (AR)
+                </Typography>
+              </Grid>
+            }
+          />
+        </ListItemButton>
+      </List>
+    </Box>
   )
 }
