@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import { useTalimContext } from "../context/HomeContext";
 import { blogList } from "../data/Data";
 import React from "react";
+import logoIcon from '/src/assets/images/Takdir_proparty.webp'
+
 interface FooterProps {
   style: string;
   lightLogo?: string;
@@ -25,7 +27,7 @@ const FooterSection5: React.FC<FooterProps> = ({
             <div className="col-lg-3 col-sm-6 col-12">
               <div className="tl-footer-widget tl-4-footer-widget">
                 <Link to="/" className=" tl-footer-widget-title">
-                  <img src="/src/assets/images/Takdir_proparty.webp" alt="logo" />
+                  <img src={logoIcon} alt="logo" />
                   {/* <h3 style={{ padding: 0, color: 'green'}}>TIME SHARE</h3> */}
                 </Link>
 

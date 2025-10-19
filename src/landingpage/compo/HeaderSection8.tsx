@@ -4,6 +4,8 @@ import Language from "components/language/Language";
 import Translatable from "components/translatable/Translatable";
 import NavSection from "./NavSection";
 import { useTalimContext } from "landingpage/context/HomeContext";
+import logoIcon from '/src/assets/images/Takdir_proparty.webp'
+
 interface HeaderProps {
 
   btnStyle: string;
@@ -74,7 +76,7 @@ const HeaderSection8: React.FC<HeaderProps> = ({
               <div className="col-lg-12 col-6">
                 <div className="logo">
                   <Link to="/">
-                    <img src="/src/assets/images/Takdir_proparty.webp" alt="Logo" />
+                    <img src={logoIcon} alt="Logo" />
                     {/* <h3 style={{margin: 0, color: "green"}}>TIME SHARE</h3> */}
 
                   </Link>
