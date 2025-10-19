@@ -1836,7 +1836,7 @@ textarea::placeholder {
   top: 0;
   width: 320px;
   height: 100%;
-  background: #1b133f none repeat scroll 0 0;
+  background: #f3f3f3 none repeat scroll 0 0;
   -webkit-box-shadow: -5px 0 20px -5px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: -5px 0 20px -5px rgba(0, 0, 0, 0.5);
   box-shadow: -5px 0 20px -5px rgba(0, 0, 0, 0.5);

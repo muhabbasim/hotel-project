@@ -43,9 +43,10 @@ const MobileNavSection = () => {
     <nav className="mean-nav">
       <ul className="justify-content-center">
         <li className="tl-nav-item tl-dropdown">
-          <a className={isDropdownOpen.home ? "dropdown-open" : ""}>
+          <a style={{ color: 'black'}} className={isDropdownOpen.home ? "dropdown-open" : ""}>
             Home{" "}
-            <span
+            <span 
+              style={{color: "black"}}
               className={`inner-mean-expand ${
                 isDropdownOpen.home ? "active" : ""
               }`}
