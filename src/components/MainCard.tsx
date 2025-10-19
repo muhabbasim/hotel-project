@@ -21,7 +21,7 @@ const headerSX = { p: 2.5, '& .MuiCardHeader-action': { m: '0px auto', alignSelf
 export interface MainCardProps extends KeyedObject {
   border?: boolean;
   boxShadow?: boolean;
-  children: ReactElement;
+  children?: ReactElement;
   subheader?: ReactElement | string;
   style?: CSSProperties;
   content?: boolean;
