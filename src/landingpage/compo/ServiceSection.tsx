@@ -1,3 +1,7 @@
+import icon1 from "/src/assets/landing-images/tl-1/service-1.png"
+import icon2 from "/src/assets/landing-images/tl-1/service-2.png"
+import icon3 from "/src/assets/landing-images/tl-1/service-3.png"
+
 const ServiceSection = () => {
   return (
     <section className="tl-1-services pt-120 pb-120">
@@ -13,7 +17,7 @@ const ServiceSection = () => {
             <div className="tl-1-service">
               <div className="tl-1-service-heading">
                 <div className="tl-1-service-icon">
-                  <img src="/src/assets/landing-images/tl-1/service-1.png" alt="Icon" />
+                  <img src={icon1} alt="Icon" />
                 </div>
 
                 <span className="tl-1-service-order-numb">01</span>
@@ -35,7 +39,7 @@ const ServiceSection = () => {
             <div className="tl-1-service">
               <div className="tl-1-service-heading">
                 <div className="tl-1-service-icon">
-                  <img src="/src/assets/landing-images/tl-1/service-2.png" alt="Icon" />
+                  <img src={icon2} alt="Icon" />
                 </div>
 
                 <span className="tl-1-service-order-numb">02</span>
@@ -57,7 +61,7 @@ const ServiceSection = () => {
             <div className="tl-1-service">
               <div className="tl-1-service-heading">
                 <div className="tl-1-service-icon">
-                  <img src="/src/assets/landing-images/tl-1/service-3.png" alt="Icon" />
+                  <img src={icon3} alt="Icon" />
                 </div>
 
                 <span className="tl-1-service-order-numb">03</span>
