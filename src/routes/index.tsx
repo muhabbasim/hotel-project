@@ -15,7 +15,7 @@ const HowItWorksPage = Loadable(lazy(() => import('landingpage/pages/how-it-work
 const PropDetailsPage = Loadable(lazy(() => import('landingpage/pages/prop-details/PropDetails')));
 const Market = Loadable(lazy(() => import('landingpage/pages/market/MarketPage')));
 const AboutUs = Loadable(lazy(() => import('landingpage/pages/about-us/AboutUs')));
-const Test = Loadable(lazy(() => import('landingpage/pages/test-page/TestPage')));
+// const Test = Loadable(lazy(() => import('landingpage/pages/test-page/TestPage')));
 
 
 // ==============================|| ROUTES RENDER ||============================== //
@@ -36,7 +36,7 @@ const router = createBrowserRouter(
         { path: '/market', element: <Market /> },
         { path: '/prop-details/:id', element: <PropDetailsPage /> },
         { path: '/about-us', element: <AboutUs /> },
-        { path: '/test', element: <Test /> },
+        // { path: '/test', element: <Test /> },
       ]
     },
     // MainRoutes

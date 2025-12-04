@@ -58,9 +58,8 @@ export default function PropDetails() {
   const [userWallet, setUserWallet] = useState<string>('');
   const [showBookingModal, setShowBookingModal] = useState(false);
   const [showDeedModal, setShowDeedModal] = useState(false);
-  const [activeTab, setActiveTab] = useState<'browse' | 'myAssets' | 'transactions'>('browse');
+  const [activeTab, setActiveTab] = useState<any>('browse');
 
-  console.log(selectedTimeSlot)
 
   useEffect(() => {
     if (!propById) {
@@ -425,7 +424,7 @@ export default function PropDetails() {
         {/* Navigation Tabs */}
         <Row className="mb-4">
           <Col>
-            <Tab.Container activeKey={activeTab} onSelect={(k) => setActiveTab(k as any)}>
+            <Tab.Container activeKey={activeTab} onSelect={(k) => setActiveTab(k)}>
               <Nav variant="tabs" className="mb-3">
                 <Nav.Item>
                   <Nav.Link eventKey="browse"><Translatable text="Browse properties"/></Nav.Link>
