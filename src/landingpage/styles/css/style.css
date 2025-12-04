@@ -5319,7 +5319,13 @@ li.tl-nav-item.tl-9-nav-item.tl-dropdown>a:hover {
 }
 
 .tl-4-banner-slide.slide-1 {
-  background-image: url("https://images.unsplash.com/photo-1621293954908-907159247fc8?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  /* background-image: url("https://images.unsplash.com/photo-1621293954908-907159247fc8?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); */
+  /* background-image: url("https://property.constructionweekonline.com/cloud/2024/07/03/1YgIx70b-shutterstock_2437743981.jpg"); */
+  /* background-image: url("https://www.arabianbusiness.com/wp-content/uploads/sites/3/cloud/current/2025/03/28/Riyadh-Financial-District.jpg"); */
+  /* background-image: url("https://www.creationbc.com/wp-content/uploads/2024/02/saudi-arabias-real-estate-boom-insights-for-the-ceos-exploring-expansion.jpg"); */
+  /* background-image: url("https://astrolabs.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F732yszuw%2Fproduction%2Feafa2bb4421acb83efbddb2180cb8aca973563c8-2560x1259.jpg&w=3840&q=75"); */
+  /* background-image: url("https://astrolabs.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F732yszuw%2Fproduction%2Feafa2bb4421acb83efbddb2180cb8aca973563c8-2560x1259.jpg&w=3840&q=75"); */
+  background-image: url("https://sameem.sa/wp-content/uploads/2025/07/Main-Banner-Desktop-Sameem-Real-Estate-Saudi-Arabia.jpg");
 }
 
 .tl-4-banner-slide.slide-2 {
@@ -5327,7 +5333,7 @@ li.tl-nav-item.tl-9-nav-item.tl-dropdown>a:hover {
 }
 
 .tl-4-banner-slide.slide-3 {
-  background-image: url("https://images.unsplash.com/photo-1496417263034-38ec4f0b665a?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-image: url("https://property.constructionweekonline.com/cloud/2024/07/03/1YgIx70b-shutterstock_2437743981.jpg");
 }
 
 @media screen and (max-width: 1399px) {
@@ -5432,10 +5438,10 @@ li.tl-nav-item.tl-9-nav-item.tl-dropdown>a:hover {
 }
 
 .tl-4-banner-descr {
-  font-size: 18px;
+  font-size: 22px;
   line-height: 28px;
   color: rgba(255, 255, 255, 0.8);
-  font-weight: 300;
+  font-weight: 500;
   width: 75%;
   margin-bottom: 32px;
 }
@@ -6900,7 +6906,7 @@ li.tl-nav-item.tl-9-nav-item.tl-dropdown>a:hover {
 }
 
 .tl-1-service-title {
-  font-size: 22px;
+  font-size: 26px;
   line-height: 28px;
   width: 100%;
   color: var(--black-4);
@@ -6969,7 +6975,8 @@ li.tl-nav-item.tl-9-nav-item.tl-dropdown>a:hover {
 }
 
 .tl-1-service-descr {
-  font-size: 15px;
+  font-size: 18px;
+  font-weight: 700;
   line-height: 1.6;
   color: rgba(24, 34, 47, 0.7);
   margin-bottom: 43px;
@@ -16273,6 +16280,8 @@ ul.tl-footer-links.tl-4-footer-links.tl-11-footer-link a:hover {
 
 .tl-4-social-descr {
   overflow: hidden;
+  font-weight: 400;
+  font-size: 22px;
   transition: 0.4s ease;
   color: rgba(255, 255, 255, 0.7);
   margin-bottom: 28px;

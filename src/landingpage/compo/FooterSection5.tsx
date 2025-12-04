@@ -2,7 +2,8 @@ import { Link } from "react-router-dom";
 import { useTalimContext } from "../context/HomeContext";
 import { blogList } from "../data/Data";
 import React from "react";
-import logoIcon from '/src/assets/images/Takdir_proparty.webp'
+import logoIcon from '/src/assets/images/gcadlogo.png'
+import Translatable from "components/translatable/Translatable";
 
 interface FooterProps {
   style: string;
@@ -32,8 +33,7 @@ const FooterSection5: React.FC<FooterProps> = ({
                 </Link>
 
                 <p className={foorterDesc}>
-                  Maurus herderite egret orca ac incident. Viramas at deque eu
-                  ipsum consenter commode egret t dam celestas beget mi.
+                  <Translatable text="A Saudi company working to provide services to logistics sector service providers as a technical consultant through its digital lab."/>
                 </p>
                 <div className={footerSocial}>
                   <ul>

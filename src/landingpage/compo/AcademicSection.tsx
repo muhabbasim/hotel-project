@@ -1,8 +1,10 @@
+import Translatable from "components/translatable/Translatable";
+
 const AcademicSection = () => {
   return (
     <section className="tl-5-academic">
       <div className="container">
-        <h2 className="tl-5-section-title mtm-15">مزايا النظام</h2>
+        <h2 className="tl-5-section-title mtm-15"><Translatable text="System Advantages"/></h2>
 
         <div className="row g-lg-4 g-3">
           <div className="col-xl-3 col-lg-4 col-6 col-xxs-12">
@@ -15,10 +17,10 @@ const AcademicSection = () => {
 
                 <div className="tl-5-single-academic-txt">
                   <h5 className="tl-5-single-academic-title">
-                  <a href="#">مرونة، تكلفة أقل</a>
+                  <a href="#"><Translatable text="Flexibility, Lower Cost"/></a>
                   </h5>
                   <a href="#">
-                    قراءة المزيد <i className="fa-regular fa-arrow-right"></i>
+                 <Translatable text="Read More"/><i className="fa-regular fa-arrow-right"></i>
                   </a>
                 </div>
               </div>
@@ -35,10 +37,10 @@ const AcademicSection = () => {
 
                 <div className="tl-5-single-academic-txt">
                   <h5 className="tl-5-single-academic-title">
-                  تأشيرة دخول لك ولعائلتك
+                    <Translatable text="Entry Visa for You and Your Family"/>
                   </h5>
                   <a href="#">
-                    قراءة المزيد <i className="fa-regular fa-arrow-right"></i>
+                   <Translatable text="Read More"/><i className="fa-regular fa-arrow-right"></i>
                   </a>
                 </div>
               </div>
@@ -54,10 +56,12 @@ const AcademicSection = () => {
                 />
 
                 <div className="tl-5-single-academic-txt">
-                  <h5 className="tl-5-single-academic-title"> حرية الإقامة
+                  <h5 className="tl-5-single-academic-title"> 
+                  <Translatable text="Residency Freedom"/>
+
                   </h5>
                   <a href="#">
-                    قراءة المزيد <i className="fa-regular fa-arrow-right"></i>
+                    <Translatable text="Read More"/><i className="fa-regular fa-arrow-right"></i>
                   </a>
                 </div>
               </div>
@@ -74,10 +78,10 @@ const AcademicSection = () => {
 
                 <div className="tl-5-single-academic-txt">
                   <h5 className="tl-5-single-academic-title">
-                  حرية الاستخدام
+                    <Translatable text="Residency Freedom"/>
                   </h5>
                   <a href="#">
-                    قراءة المزيد <i className="fa-regular fa-arrow-right"></i>
+                    <Translatable text="Read More"/><i className="fa-regular fa-arrow-right"></i>
                   </a>
                 </div>
               </div>

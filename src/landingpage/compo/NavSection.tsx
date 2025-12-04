@@ -16,29 +16,34 @@ const NavSection: React.FC<NavProps> = ({ ulPosition, liStyle }) => {
   }
   
   return (
-    <ul className={ulPosition}>
+    <ul style={{padding: 0, margin: 0}} className={ulPosition}>
       <li className={`tl-nav-item ${liStyle} tl-dropdown`}>
-        <a role="button">
-          <Translatable text="General Benefits" />
-        </a>
+        <NavLink onClick={handleScrollToTop} to="/how-it-works/seller">
+          <Translatable text="How it works" />
+        </NavLink>
       </li>
 
-      <li className={`tl-nav-item ${liStyle} tl-dropdown`}>
+      {/* <li className={`tl-nav-item ${liStyle} tl-dropdown`}>
         <a role="button">
           <Translatable text="About Saudi" />
         </a>
+      </li> */}
+      <li className={`tl-nav-item ${liStyle} tl-dropdown`}>
+        <NavLink onClick={handleScrollToTop} to="/Market">
+          <Translatable text="Market" />  
+        </NavLink>
       </li>
       
       <li className={`tl-nav-item ${liStyle} tl-dropdown`}>
-        <NavLink onClick={handleScrollToTop} to="/event-details/fd">
+        <NavLink onClick={handleScrollToTop} to="/regulations">
           <Translatable text="Regulations" />
         </NavLink>
       </li>
 
       <li className={`tl-nav-item ${liStyle} tl-dropdown`}>
-        <a role="button">
+        <NavLink onClick={handleScrollToTop} to="/about-us">
           <Translatable text="About Us" />
-        </a>
+        </NavLink>
       </li>
     </ul>
   );

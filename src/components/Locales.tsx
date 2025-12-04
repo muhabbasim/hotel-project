@@ -34,7 +34,7 @@ export default function Locales({ children }: Props) {
 
 
   useEffect(() => {
-    loadLocaleData(i18n).then((d: { default: Record<string, string> | Record<string, MessageFormatElement[]> | undefined }) => {
+    loadLocaleData(i18n).then((d: any) => {
       setMessages(d.default);
     });
   }, [i18n]);

@@ -1,3 +1,4 @@
+import Translatable from "components/translatable/Translatable";
 import icon1 from "/src/assets/landing-images/tl-1/service-1.png"
 import icon2 from "/src/assets/landing-images/tl-1/service-2.png"
 import icon3 from "/src/assets/landing-images/tl-1/service-3.png"
@@ -8,7 +9,7 @@ const ServiceSection = () => {
       <div className="container">
         <div className="tl-1-section-heading">
           <h2 className="tl-1-section-title">
-          خطوات الحصول على الصك 
+            <Translatable text="The Journey, Simplified"/>
           </h2>
         </div>
 
@@ -24,12 +25,12 @@ const ServiceSection = () => {
               </div>
 
               <h4 className="tl-1-service-title">
-                <a href="#">تعبئة البيانات عبر نموذج إلكتروني</a>
+                <a href="/how-it-works/buyer"><Translatable text="I'm a Buyer"/></a>
               </h4>
               <p className="tl-1-service-descr">
-              مرونة، تكلفة أقل، تملك جزئي، إمكانية التنازل  
+                <Translatable text="Steps for purchase and purchase documentation through government systems and laws"/>
               </p>
-              <a href="#" className="tl-1-service-btn">
+              <a href="/how-it-works/buyer" className="tl-1-service-btn">
                 <i className="fa-regular fa-arrow-right-long"></i>
               </a>
             </div>
@@ -46,12 +47,12 @@ const ServiceSection = () => {
               </div>
 
               <h4 className="tl-1-service-title">
-                <a href="#">اختيار الوحدة والفترة الزمنية</a>
+                <a href="/how-it-works/seller"><Translatable text="I'm a Seller"/></a>
               </h4>
               <p className="tl-1-service-descr">
-              إقامة بدون كفيل 
+                <Translatable text="Steps for registration, display, and unit division"/>
               </p>
-              <a href="/units-market" className="tl-1-service-btn">
+              <a href="/how-it-works/seller" className="tl-1-service-btn">
                 <i className="fa-regular fa-arrow-right-long"></i>
               </a>
             </div>
@@ -68,12 +69,12 @@ const ServiceSection = () => {
               </div>
 
               <h4 className="tl-1-service-title">
-                <a href="#">إصدار الاجازة الإلكترونية</a>
+                <a href="/how-it-works/technologies"><Translatable text="Technologies Used"/></a>
               </h4>
               <p className="tl-1-service-descr">
-              حرية الاستخدام: إقامة – تأجير – تنازل – استبدال.
+                <Translatable text="Technologies used for contract documentation and encryption (Utility Deeds)"/>
               </p>
-              <a href="#" className="tl-1-service-btn">
+              <a href="/how-it-works/technologies" className="tl-1-service-btn">
                 <i className="fa-regular fa-arrow-right-long"></i>
               </a>
             </div>

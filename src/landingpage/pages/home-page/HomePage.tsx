@@ -7,18 +7,19 @@ import SocialSection from "landingpage/compo/SocialSection";
 import CtaSection3 from "landingpage/compo/CtaSection3";
 import AcademicSection from "landingpage/compo/AcademicSection";
 import FaqSection from "landingpage/compo/FaqSection";
+import MarketSection from "landingpage/compo/market/MarketSection";
 
 const HomePage = () => {
   return (
     <div className="home-12">
       <BannerSection4 />
       <ServiceSection />
-      <AboutSection5 inner="" />
-      <AcademicSection />
       <SocialSection sectionStyle="bg-defaults" cardStyle="tl-4-social" />
+      <AboutSection5 inner="" />
+      <MarketSection/>
+      <AcademicSection />
       <FaqSection />
       <CtaSection3 style="" lastWord="Dance?" lastMsg="Now and Let's Move!" />
-      {/* <BlogSection8 /> */}
     </div>
   );
 };

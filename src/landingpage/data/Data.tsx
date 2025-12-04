@@ -25,6 +25,8 @@ const memberList = [
   },
 ];
 
+
+
 const courseList = [
   {
     id: 0,
@@ -1267,15 +1269,15 @@ const aboutTestimonialList = [
 const alumniImgList = [
   {
     id: 0,
-    imgSrc: "/src/assets/images/tl-5/alumni-1.jpg",
+    imgSrc: "https://images.unsplash.com/photo-1646229227468-ba6eb534d368?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     id: 1,
-    imgSrc: "/src/assets/images/tl-5/alumni-2.jpg",
+    imgSrc: "https://images.unsplash.com/photo-1702258906579-fd5ccbcfa3f3?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     id: 2,
-    imgSrc: "/src/assets/images/tl-5/alumni-3.jpg",
+    imgSrc: "https://images.unsplash.com/photo-1729817901796-11a32e72bba3?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
 ];
 
@@ -2049,6 +2051,79 @@ const socialMediaData = [
   },
 ];
 
+const UpdatedServices = [
+  {
+    id: 'FileText',
+    title: "Digital Ownership Deeds",
+    shortDesc: "Issue real estate ownership deeds & certificates",
+    fullDesc: "We issue official real estate ownership deeds and certificates in full compliance with Ministry of Housing and Real Estate Authority standards and conditions.",
+    features: [
+      "Compliant with Ministry of Housing standards",
+      "Verified by Real Estate Authority",
+      "Instant digital certificate issuance",
+      "Blockchain-secured documentation",
+      "Legal validity guaranteed"
+    ],
+    color: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)"
+  },
+  {
+    id: 'Home',
+    title: "Property Marketplace",
+    shortDesc: "Display, sell, and resell residential units",
+    fullDesc: "Comprehensive marketplace service for displaying, selling, and resellling residential units with maximum exposure and security.",
+    features: [
+      "Wide market reach and visibility",
+      "Primary sales and resale platform",
+      "Professional property listings",
+      "Qualified buyer matching",
+      "Secure transaction processing"
+    ],
+    color: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)"
+  },
+  {
+    id: 'Clock',
+    title: "Time Period Management",
+    shortDesc: "Determine and book time periods",
+    fullDesc: "Advanced booking system allowing you to determine availability, reserve time periods, and manage your property usage schedule efficiently.",
+    features: [
+      "Real-time availability calendar",
+      "Flexible booking windows",
+      "Automatic scheduling conflicts resolution",
+      "Priority booking for owners",
+      "Instant confirmation system"
+    ],
+    color: "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)"
+  },
+  {
+    id: 'FileCheck',
+    title: "Contract Completion",
+    shortDesc: "Streamlined contract processing",
+    fullDesc: "End-to-end contract management from drafting to execution with legal support and digital signing capabilities.",
+    features: [
+      "Smart contract automation",
+      "Legal review and compliance",
+      "Electronic signature integration",
+      "Document version control",
+      "Secure archive storage"
+    ],
+    color: "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)"
+  },
+  {
+    id: 'Wrench',
+    title: "Property Management",
+    shortDesc: "Complete management and maintenance",
+    fullDesc: "Professional management and maintenance services ensuring your residential units remain in premium condition year-round.",
+    features: [
+      "Regular maintenance scheduling",
+      "24/7 emergency response",
+      "Quality control inspections",
+      "Vendor coordination",
+      "Detailed maintenance reports"
+    ],
+    color: "linear-gradient(135deg, #fa709a 0%, #fee140 100%)"
+  }
+];
+
 const categoriesData = [
   { title: 'Product Design', icon: '/src/assets/images/tl-12/sub-5.png' },
   { title: 'App Development', icon: '/src/assets/images/tl-12/sub-3.png' },
@@ -2114,5 +2189,6 @@ export {
   faqList,
   socialMediaData,
   categoriesData,
-  articlesData
+  articlesData,
+  UpdatedServices
 };
