@@ -152,7 +152,7 @@ const FooterSection5: React.FC<FooterProps> = ({
             <div className="col-12">
               <p className="tl-4-copyright-txt m-0 text-center">
                 Copyright © {new Date().getFullYear()} All Rights Reserved by
-                Talim
+                GCAD
               </p>
             </div>
           </div>

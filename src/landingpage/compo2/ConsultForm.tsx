@@ -97,7 +97,7 @@ const ConsultForm: React.FC<ConsultProps> = ({ style, column, btnStyle }) => {
 
         <div className="col-12">
           <button type="submit" className={btnStyle}>
-            Get a Consultation
+            Contact us
           </button>
         </div>
       </div>

@@ -47,7 +47,7 @@ export default function HowItWorksPage() {
     {
       icon: DollarSign,
       title: "Tokenized Real Estate Representation",
-      description: "Each real estate unit is represented as a digital token (NFT/security token) on a blockchain",
+      description: "Each real estate unit is represented as a digital token on centralized architecture supported by digital encryption",
       details: [
         "Blockchain-based Digital Twins",
         "Fractional Ownership Tokens: Time periods are tokenized into ERC-1155 or ERC-3525 tokens for flexible time-slot representation",
@@ -68,13 +68,13 @@ export default function HowItWorksPage() {
     },
     {
       icon: Home,
-      title: "Secure Transactions",
-      description: "Verify ownership without revealing sensitive personal data",
+      title: "Decentralized Vision",
+      description: "Our current network is built on a centralized architecture supported by digital encryption, with a future plan to transition to decentralization by developing the network using blockchain technologies on platforms such as Solana and Ethereum.",
       details: [
-        "Zero-Knowledge Proofs: Verify ownership without revealing sensitive personal data",
-        "Digital Identity Verification: Integration with Saudi National ID (Absher) and SPL systems",
-        "End-to-End Encryption: All sensitive data encrypted both in transit and at rest",
-        "Multi-Signature Wallets: Multiple signatures required for high-value transactions"
+        "Enhanced Security — Blockchain provides tamper-proof, cryptographically secured data storage.",
+        "Decentralization — Eliminates single points of failure and reduces dependency on centralized servers.",
+        "Transparency & Auditability — All transactions are recorded on an immutable ledger, improving trust and compliance.",
+        "Smart Contract Automation — Processes can run automatically without intermediaries, reducing errors and increasing efficiency."
       ]
     },
   ];

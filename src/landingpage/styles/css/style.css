@@ -2554,6 +2554,7 @@ button.tl-1-teachers-slider-dots.active {
 }
 
 .tl-5-section-title {
+  color: var(--kb-teal);
   font-size: 48px;
   line-height: 53px;
   font-weight: 700;
@@ -8438,6 +8439,13 @@ li.tl-nav-item.tl-9-nav-item.tl-dropdown>a:hover {
   height: 50%;
   background-color: #F9F6F0;
   z-index: -1;
+}
+
+.tl-5-about-about {
+  font-size: 25px;
+  line-height: 42px;
+  padding-bottom: 0;
+  color: var(--red);
 }
 
 .tl-5-about-dialogue {
