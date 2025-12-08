@@ -10,7 +10,10 @@ const MarketSlider = () => {
   return (
     <>
       <div className="tl-1-section-heading">
+      <a href={`/market`} style={{ textDecoration: 'underline'}}>
         <h2 className="tl-1-section-title"><Translatable text='Property Market'/></h2>
+      </a>
+
         <div className="tl-2-blogs-slider-nav" id="tl-1-courses-slider-nav">
           <button className="owl-prev">
             <i className="fa-light fa-arrow-left"></i>
