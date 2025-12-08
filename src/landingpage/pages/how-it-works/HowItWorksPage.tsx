@@ -214,9 +214,33 @@ export default function HowItWorksPage() {
         "Featured placement on our platform"
       ]
     },
-
+  
+    // --- NEW STEP 1 ---
+    {
+      icon: DollarSign, // feel free to swap icon
+      title: "Payment to Ministry of Housing",
+      description: "Process and settle all required government fees to complete regulatory compliance.",
+      details: [
+        "Review applicable Ministry of Housing requirements",
+        "Process payment securely through integrated channels",
+        "Receive confirmation of government fee settlement",
+        "Automatic update of compliance status in your dashboard"
+      ]
+    },
+  
+    // --- NEW STEP 2 ---
+    {
+      icon: FileText, // feel free to change icon
+      title: "Automated Sukuk Issuance",
+      description: "Your property's shares are tokenized and issued as digital sukuk through our automated system.",
+      details: [
+        "Smart contract generation for the sukuk structure",
+        "Tokenization of ownership shares on the platform",
+        "Automated issuance to verified buyers",
+        "Real-time tracking through your property dashboard"
+      ]
+    }
   ];
-
   // const ownershipTypes = [
   //   {
   //     id: 'fractional',
