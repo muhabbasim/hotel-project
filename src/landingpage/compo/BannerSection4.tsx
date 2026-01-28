@@ -1,6 +1,8 @@
 import Translatable from "components/translatable/Translatable";
 import { Autoplay, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import bgImg from '/src/assets/images/midar-hero-bg.webp'
+
 
 const BannerSection4 = () => {
   // Define an array of slide data objects
@@ -23,7 +25,12 @@ const BannerSection4 = () => {
   ];
 
   return (
-    <section className="tl-4-banner">
+    <section style={{
+      backgroundImage: `url(${bgImg})`,
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat',
+      backgroundSize: 'contain'
+    }} className="tl-4-banner">
       <Swiper
         className="tl-4-banner-slider owl-carousel"
         loop={true}
@@ -52,10 +59,19 @@ const BannerSection4 = () => {
                     <h1 className="tl-4-banner-title">
                       <Translatable text={slide.title}/>
                     </h1>
-                    <p className="tl-4-banner-descr">
-                      <Translatable text={slide.description}/>
-                    </p>
-                    <a href="#" className="tl-4-banner-btn">
+                    <div 
+                      style={{
+                        backgroundColor: '#0000006c',
+                        padding: "15px",
+                        borderRadius: '10px'
+                      }}
+                    >
+
+                      <p style={{ marginBottom: '10px'}} className="tl-4-banner-descr">
+                        <Translatable text={slide.description}/>
+                      </p>
+                    </div>
+                    <a style={{ marginTop: '20px'}} href="#" className="tl-4-banner-btn">
                       <Translatable text={"ابدأ الطلب الآن"}/>
                       {/* <i className="fa-light fa-angle-right"></i> */}
                     </a>

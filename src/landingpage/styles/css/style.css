@@ -5326,11 +5326,13 @@ li.tl-nav-item.tl-9-nav-item.tl-dropdown>a:hover {
   /* background-image: url("https://www.creationbc.com/wp-content/uploads/2024/02/saudi-arabias-real-estate-boom-insights-for-the-ceos-exploring-expansion.jpg"); */
   /* background-image: url("https://astrolabs.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F732yszuw%2Fproduction%2Feafa2bb4421acb83efbddb2180cb8aca973563c8-2560x1259.jpg&w=3840&q=75"); */
   /* background-image: url("https://astrolabs.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F732yszuw%2Fproduction%2Feafa2bb4421acb83efbddb2180cb8aca973563c8-2560x1259.jpg&w=3840&q=75"); */
-  background-image: url("https://sameem.sa/wp-content/uploads/2025/07/Main-Banner-Desktop-Sameem-Real-Estate-Saudi-Arabia.jpg");
+  /* background-image: url("https://sameem.sa/wp-content/uploads/2025/07/Main-Banner-Desktop-Sameem-Real-Estate-Saudi-Arabia.jpg"); */
 }
 
 .tl-4-banner-slide.slide-2 {
   background-image: url("https://images.unsplash.com/photo-1630372128525-a6d3233c671f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  color: #00e9af6c;
+  /* color: #0000006c; */
 }
 
 .tl-4-banner-slide.slide-3 {

@@ -60,6 +60,7 @@ export default function PropDetails() {
   const [showDeedModal, setShowDeedModal] = useState(false);
   const [activeTab, setActiveTab] = useState<any>('browse');
 
+  console.log(activeTab)
 
   useEffect(() => {
     if (!propById) {
@@ -357,7 +358,7 @@ export default function PropDetails() {
       </Modal.Header>
       <Modal.Body>
         <Card className="border-primary">
-          <Card.Body className="text-center">
+          <Card.Body className="text-centerx">
             <div className="mb-4">
               <i className="bi bi-award-fill text-success" style={{ fontSize: '3rem' }}></i>
             </div>
@@ -612,6 +613,8 @@ export default function PropDetails() {
               onClick={() => {
                 initiatePurchase(selectedProperty?.id || '', selectedTimeSlot?.id || '');
                 setShowBookingModal(false);
+                setActiveTab('transactions');
+                window.scrollTo({ top: 0, behavior: 'smooth' });
               }}
             >
               <Translatable text="Confirm purchase and authentication"/>
