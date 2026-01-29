@@ -1,3 +1,4 @@
+import Translatable from "components/translatable/Translatable";
 import React, { useState } from "react";
 interface AccordionProp {
   array: FaqArray[];
@@ -31,7 +32,7 @@ const AccordionSection: React.FC<AccordionProp> = ({ array }) => {
             role="button"
             onClick={() => handleAccordionBtn(item.id)}
           >
-            <h6 className="tl-8-accordion-item-title">{item.ques}</h6>
+            <h6 className="tl-8-accordion-item-title"><Translatable text={item.ques}/></h6>
             <span className="tl-8-accordion-item-expand-icon"></span>
           </div>
 
@@ -40,7 +41,7 @@ const AccordionSection: React.FC<AccordionProp> = ({ array }) => {
               openAccordion === item.id ? "open" : ""
             }`}
           >
-            {item.ans}
+            <Translatable text={item.ans}/>
           </p>
         </div>
       ))}

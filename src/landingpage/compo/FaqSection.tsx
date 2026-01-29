@@ -1,3 +1,4 @@
+import Translatable from "components/translatable/Translatable";
 import AccordionSection from "landingpage/compo/AccordionSection";
 import { faqList } from "landingpage/data/Data";
 
@@ -14,7 +15,7 @@ const FaqSection = () => {
 
           <div className="col-xl-5 col-lg-6">
             <h2 className="tl-8-section-title">
-            احصل على إجابات سريعة لاستفساراتك
+            <Translatable text="Get quick answers to your questions"/>
             </h2>
             <AccordionSection array={faqList.slice(0, 4)} />
           </div>

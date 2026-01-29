@@ -1,7 +1,7 @@
 import { useTalimContext } from "../../context/HomeContext";
 import { Link } from "react-router-dom";
 import MobileNavSection from "../navigation/MobileNavSection";
-import logoIcon from '/src/assets/images/Takdir_proparty.webp'
+import logoIcon from '/src/assets/images/midar_logo_light.png'
 
 const SidebarSection = () => {
   const { isSidebarOpen, handleSidebarClose } = useTalimContext();

@@ -4,7 +4,6 @@ import Language from "components/language/Language";
 import Translatable from "components/translatable/Translatable";
 import NavSection from "./NavSection";
 import { useTalimContext } from "landingpage/context/HomeContext";
-import logoIcon from '/src/assets/images/Takdir_proparty.webp'
 import midarIcon from '/src/assets/images/midar_logo_light.png'
 
 interface HeaderProps {
@@ -30,18 +29,18 @@ const HeaderSection8: React.FC<HeaderProps> = ({
             <div className="col-lg-8">
               <ul style={{margin: 0}} className="tl-8-top-header-contacts">
                 <li>
-                  <a href="tel:12356877787">
-                    <i className="fa-solid fa-phone"></i> (88) 123 568 777 87{" "}
+                  <a href="tel:+966599448339">
+                    <i className="fa-solid fa-phone"></i> +966 59 944 8339{" "}
                   </a>
                 </li>
                 <li>
                   <a href="mailto:info@xyz-text.com">
-                    <i className="fa-solid fa-envelope"></i> info@xyz-text.com
+                    <i className="fa-solid fa-envelope"></i> co@begining.online
                   </a>
                 </li>
                 <li>
                   <i className="fa-solid fa-location-dot"></i>Location 07052,
-                  KSA
+                  Makkah, KSA
                 </li>
               </ul>
             </div>

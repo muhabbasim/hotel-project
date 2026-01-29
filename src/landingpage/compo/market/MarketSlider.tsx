@@ -73,23 +73,23 @@ const MarketSlider = () => {
 
             <div className="tl-1-course-txt">
               <span className="tl-1-course-author">
-                Location: <span style={{ color: 'skyblue'}}>{item.location}</span>
+                <Translatable text={"Location"}/>: <span style={{ color: 'skyblue'}}>{item.location}</span>
               </span>
               <h4 className="tl-1-course-title">
                 <Link to={`/prop-details/${item.id}`}>{item.title}</Link>
               </h4>
               <div className="tl-1-course-stats">
                 <div className="tl-1-course-stat">
-                  <span className="tl-1-course-stat-icon">
+                  <span className="tl-1-course-stat-icon px-2">
                     <i className="fa-regular fa-book-blank"></i>
                   </span>
                   <span className="tl-1-course-stat-txt">
-                    {item.deedNumber} رقم الصك
+                    {item.deedNumber} <Translatable text={"Deed number"}/>
                   </span>
                 </div>
 
                 <div className="tl-1-course-stat">
-                  <span className="tl-1-course-stat-icon p-1">
+                  <span className="tl-1-course-stat-icon px-2">
                     <i className="fa-regular fa-user-group"></i>
                   </span>
                   <span className="tl-1-course-stat-txt">

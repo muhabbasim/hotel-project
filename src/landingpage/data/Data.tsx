@@ -2004,28 +2004,28 @@ const eventList = [
 const faqList = [
   {
     id: 0,
-    ques: 'هل يمكنني إعادة بيع الصك؟',
-    ans: ' نعم، يتيح النظام البيع أو التنازل أو الهبة وفق الآلية المعتمدة. '
+    ques: 'Can I resell the deed?',
+    ans: 'Yes, the system allows selling, transferring, or gifting according to the approved mechanism.'
   },
   {
     id: 1,
-    ques: 'كم فترة الانتفاع؟ ',
+    ques: 'What is the duration of usage?',
     ans: 'We accept credit/debit cards, PayPal, and bank transfers for your convenience.'
   },
   {
     id: 2,
-    ques: "	هل يشمل الأسرة؟",
+    ques: 'Does it include family members?',
     ans: "Yes, we offer a 30-day satisfaction guarantee. If you're not happy, we'll refund."
   },
   {
     id: 3,
-    ques: '	ماذا عن الانسحاب؟',
-    ans: 'لديك 10 أيام للتراجع دون سبب، و3 أشهر إذا لم تُقدَّم المعلومات كاملة عند التوقيع.'
+    ques: 'What about withdrawal?',
+    ans: 'You have 10 days to withdraw without providing a reason, and 3 months if the information was not fully provided at the time of signing.'
   },
   {
     id: 4,
-    ques: 'ما وضع التصنيف والترخيص؟',
-    ans: 'الوحدات مرخّصة ومصنّفة فندقيًا، والتسويق يستند إلى تراخيص وضمانات مالية نظامية.'
+    ques: 'What is the status of classification and licensing?',
+    ans: 'The units are licensed and hotel-classified, and marketing is based on official licenses and financial guarantees.'
   }
 ];
 const socialMediaData = [
